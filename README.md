@@ -144,7 +144,7 @@ public class OnlineVotingSystem {
             System.out.println("1. Register Voter\n2. Register Candidate\n3. Cast Vote\n4. View Results\n5. Exit");
             System.out.print("Choose: ");
             int choice = sc.nextInt();
-            sc.nextLine(); // Consume newline left-over
+            sc.nextLine();
             switch (choice) {
                 case 1 -> manager.registerVoter(sc);
                 case 2 -> manager.registerCandidate(sc);
